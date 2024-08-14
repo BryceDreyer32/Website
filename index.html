@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Hyperspace by HTML5 UP</title>
+		<title>Bryce's Senior Project</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,10 +19,15 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who we are</a></li>
-							<li><a href="#two">What we do</a></li>
-							<li><a href="#three">Get in touch</a></li>
+							<img src="images/Logo.png" width="60%" style="padding-right:30%">
+							<li><a href="#intro">Project Onyx</a></li>
+							<li><a href="#game">The Game</a></li>
+							<li><a href="#mech">Mechanical Design</a></li>
+							<li><a href="#elec">Electrical Design</a></li>
+							<li><a href="#fpga">FPGA Design</a></li>
+							<li><a href="#soft">Software Design</a></li>
+							<li><a href="#general">General Project Info</a></li>
+							<li><a href="#contact">About Me</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -34,23 +39,105 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Hyperspace</h1>
-							<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
+							<h1>Project Onyx</h1>
+							
+							<video width="800" height="600" controls autoplay muted>
+								<source src="images/Full_Robot_Animation.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
 						</div>
 					</section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
+				<!-- Game -->
+				<section id="game" class="wrapper style1 fullscreen fade-up">
+					<div class="inner">
+						<h1>The Game</h1>
+
+						<video width="640" height="480" controls autoplay muted>
+							<source src="images/Field Animation v7.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+
+						<p>
+							"Ocean Rescue" is an FRC-like game where robots need to "rescue" the "passengers" off a burning ship, and place them safely on a nearby desert island. <br>
+							- Two alliances of three robots each play on their half of the field. <br>
+							- No interaction between the two sides are allowed. <br>
+							- Robots begin the game behind the centerline and may be preloaded with three flame retardant agent cells (FRACs). <br>
+							- The purpose of the game is to rescue as many of the passengers as possible on the flame-engulfed ship. <br>
+							- Passengers must be carefully picked up from the boat (cannot be crushed and heads must remain attached to bodies) and shuttled safely across to the island where they must be placed standing in order to gain the maximum amount of points. <br>
+							- To keep the flames at bay robots must apply FRACs by shooting or inserting them into the holes of the ship's hull. <br>
+							- If FRACs are not applied expediently the fire continues to grow, once it reaches the maximum level displayed by the gauge all points henceforth are halved. <br>
+							- Passengers who are knocked down into the ship are lost and therefore not scoreable. <br>
+						   
+						</p>
+						<ul class="actions">
+							<li><a href="#one" class="button scrolly">Learn more</a></li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- Mechanical Design -->
+					<section id="mech" class="wrapper style2 spotlights">
+						<h1 style="padding-top:5%; padding-left:4%;">Mechanical Design</h1>
+						<section>
+							<a href="#" class="image"><img src="images/Full_Robot.png" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Full Robot CAD</h2>
+									<p>Click the image to explore the full robot design through!</p>
+									<ul class="actions">
+										<li><a href="https://gmail1441058.autodesk360.com/shares/public/SH30dd5QT870c25f12fc59f9523021f12289?mode=embed" class="button">Full Robot CAD</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/Swerve_Drive.png" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Swerve Drive Design</h2>
+									<p>The Swerve Drive is the main component that drives the robot. The high-level concept is similar to designs used by FRC teams, but for this project a novel planetery-gear based system was designed. Click the image to explore this part of the design further!</p>
+									<ul class="actions">
+										<li><a href="https://gmail1441058.autodesk360.com/shares/public/SH30dd5QT870c25f12fca02d3c336af0c7eb?mode=embed" class="button">Swerve Drive CAD</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/Chassis.png" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Chassis Design</h2>
+									<p>The Chassis is the base of the robot. The Swerve Drives are all anchored to this, as are all the electrical components as well as the robotic arm. Click the image to explore this part of the design further!</p>
+									<ul class="actions">
+										<li><a href="https://gmail1441058.autodesk360.com/shares/public/SH30dd5QT870c25f12fc6d33aa628fae1f88?mode=embed" class="button">Chassis CAD</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/Arm.png" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Robotic Arm Design</h2>
+									<p>The Robotic Arm has 4 degrees of freedom, allowing it to perform the task at hand with precision. Click the image to explore this part of the design further!</p>
+									<ul class="actions">
+										<li><a href="https://gmail1441058.autodesk360.com/shares/public/SH30dd5QT870c25f12fcf90e78e15e6091d9?mode=embed" class="button">Robotic Arm CAD</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Electrical Design -->
+					<section id="elec" class="wrapper style2 spotlights">
+						<h1 style="padding-top:8%; padding-left:4%;">Electrical Design</h1>
 						<section>
 							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h2>Brushless DC Motor Controller</h2>
+									<p>A custom Brushlesss DC Motor Controller board was designed using a TI DRV8032 driver</p>
 									<ul class="actions">
 										<li><a href="generic.html" class="button">Learn more</a></li>
 									</ul>
@@ -61,76 +148,145 @@
 							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h2>System Motherboard</h2>
+									<p>A Motherboard was designed to create an integrated system and to make the connectivity between the Orange Pi 5 Pro, Tang Nano 9k FPGA, and additional peripherals more simple to manage</p>
 									<ul class="actions">
 										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- FPGA Design -->
+					<section id="fpga" class="wrapper style2 spotlights">
+						<h1 style="padding-top:8%; padding-left:4%;">FPGA Design</h1>
+						<section>
+							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>FPGA Subsystem</h2>
+									<p>Click the link to view the High-level Architectural Specification (HAS) of the FPGA Subsystem.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">FPGA HAS</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h2>Micro-Architectural Specifications</h2>
+									<p>Click the links below to view the MAS document for each part of the subsystem.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="generic.html" class="button">SPI (Serial Peripheral Interface)</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">PWM (Pulse Width Modulator)</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">PWM Rotation Controller</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Address Decoder</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 					</section>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
+				<!-- Software Design -->
+					<section id="soft" class="wrapper style2 spotlights">
+						<h1 style="padding-top:8%; padding-left:4%;">Software Design</h1>
+						<section>
+							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Orange Pi Software</h2>
+									<p>Click the links below to view the different parts of the Orange Pi Software Design.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Overall Design</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Interface to ESP32 (For PS4 Control)</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Interface to FPGA (For Swerve Control)</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Camera Inerface</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Neural Network</a></li>
+									</ul>
+								</div>
 							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>ESP32 Software</h2>
+									<p>Click the link below to view the ESP32 software.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">ESP32 Software</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
 					</section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
+
+
+				<!-- General Info -->
+				<section id="general" class="wrapper style3 fade-up">
+					<div class="inner">
+						<h2>General Project Info</h2>
+						<p>Click the following links to view general information about the project.</p>
+						<div class="features">
+							<section>
+								<span class="icon solid major fa-code-branch"></span>
+								<h3>Git Repository</h3>
+								<p>The FPGA Verilog, ESP32 C++, and Orange Pi Python code can be found here</p>
+								<ul class="actions">
+									<li><a href="generic.html" class="button">Git Repo</a></li>
+								</ul>
+							</section>
+							<section>
+								<span class="icon solid major fa-book"></span>
+								<h3>Project Log</h3>
+								<p>The daily progress for this project can be found here</p>
+								<ul class="actions">
+									<li><a href="generic.html" class="button">Daily Log</a></li>
+								</ul>
+							</section>
+							<section>
+								<span class="icon solid major fa-dollar-sign"></span>
+								<h3>Project Bill of Materials (BOM)</h3>
+								<p>The materials and costs of the project can be found here.</p>
+								<ul class="actions">
+									<li><a href="generic.html" class="button">Project BOM</a></li>
+								</ul>
+							</section>
+							<section>
+								<a href="https://glencoe.hsd.k12.or.us/" class="image"><img src="images/Glencoe.png" alt=""	style="padding-left:30%;"/></a> <br> <br>
+								<p>Glencoe High School, Hillsboro, Oregon</p>
+							</section>
+						</div>
+					</div>
+				</section>
+
+				
+				<!-- About me -->
+					<section id="contact" class="wrapper style1 fade-up">
 						<div class="inner">
+							<h2>About Me</h2>
+							<p>I'm a High school Senior, class of 2025 at Glencoe High School in Hillsboro, Oregon. I'm hoping to study Electrical Engineering in college.</p>
+							<ul class="actions">
+								<li><a href="" class="button submit">Resume link</a></li>
+							</ul> <br>
 							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="split style1">
 								<section>
 									<form method="post" action="#">
@@ -154,32 +310,7 @@
 									</form>
 								</section>
 								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
+									<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>									
 								</section>
 							</div>
 						</div>
@@ -191,7 +322,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Bryce's Senior Project. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
