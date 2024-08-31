@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: #262527;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1915,7 +1915,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			background-color: #ffffff;
-			color: #312450 !important;
+			color: #2a292e !important;
 		}
 
 			input[type="submit"].primary:after,
@@ -2356,7 +2356,7 @@ input, select, textarea {
 
 		select option {
 			color: #ffffff;
-			background: #312450;
+			background: #252427;
 		}
 
 		select:focus::-ms-value {
@@ -2525,7 +2525,7 @@ input, select, textarea {
 			display: block;
 			background: #ffffff;
 			border-radius: 100%;
-			color: #312450;
+			color: #272729;
 			text-align: center;
 			line-height: 2.5em;
 			margin: 0 0 1.3em 0;
@@ -3236,7 +3236,7 @@ input, select, textarea {
 			}
 
 		.wrapper.alt {
-			background-color: #261c3e;
+			background-color: #282729;
 		}
 
 		.wrapper.style1 {
@@ -3253,7 +3253,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style2-alt {
-			background-color: #060608;
+			background-color: #1c1c1f;
 		}
 
 		.wrapper.style3 {
@@ -3261,7 +3261,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3-alt {
-			background-color: #131315;
+			background-color: #1d1d1f;
 		}
 
 		.wrapper.fullscreen {
@@ -3371,7 +3371,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #020203;
+		background-color: #2b2b30;
 		cursor: default;		
 		padding: 1.75em 2em;
 	}
