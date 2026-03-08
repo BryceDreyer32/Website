@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Project Helios Brushless DC Motor Controller</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<!--<img src="images/Logo.png" width="60%" style="padding-right:30%"> -->
+							<li><a href="#CAD">Motor Controller CAD Model</a></li>
+							<li><a href="#MotorSchematic">Motor Inverter Schematic</a></li>
+							<li><a href="#MotorBoard">Motor Inverter PCB Layout</a></li>
+							<li><a href="#STSchematic">STM32 Control Board Schematic</a></li>
+							<li><a href="#STBoard">STM32 Control PCB Layout</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- CAD -->
+					<section id="CAD" class="wrapper style2 spotlights">
+						<h1 style="padding-top:8%; padding-left:4%;">Motor Controller CAD Model</h1>
+						<section>
+							<a class="image"><img src="images/HeliosMotorBoard.gif" alt="" style="object-fit: fill;" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<!--<h2>Pogo Pin Socket Design</h2> -->
+									<p> Working with Dr. Pooya Tadayon on the design of pogo pins for next generation socketing systems. 
+                                        The model on the left shows the external geometry of the pogo pin, while the model on the right shows the internal geometry. </p>
+                                    </p>
+									<!--<ul class="actions">
+										<li><a href="PogoResearch.html" class="button">Learn more</a></li>
+									</ul>--> 
+								</div>
+							</div>
+						</section>
+					</section>
+
+
+				<!-- InverterBoard Schematic -->
+					<section id="MotorSchematic" class="wrapper style2 spotlights">
+						<h1 style="padding-top:8%; padding-left:4%;">Motor Inverter Schematic</h1>
+						<section>
+							<a class="image"><img src="images/InverterBoard.gif" alt="" style="object-fit: fill;" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<!--<h2>Revised BLDC Motor Controller</h2> -->
+									<p> The BLDC motor inverter schematic includes a DRV8323 gate driver, which drives the 6 power N-MOSFETs. The DRV8323
+                                        connects to the controller board through two sets of header pins. Recycling circuits are added to absorb voltage spikes and
+                                        to recycle the power. Snubber circuits are added to filter noise and reduce EMI to protect the MOSFETs. </p>
+									<!--<ul class="actions">
+										<li><a href="https://docs.google.com/document/d/1b8JR5uWFIEjenfiocnhV5Y2pE9JiTMAXXymfJotJang/edit" class="button">Learn more</a></li>
+									</ul> -->
+								</div>
+							</div>
+						</section>
+					</section>
+
+
+				<!-- MotorBoard -->
+					<section id="MotorBoard" class="wrapper style2 spotlights">
+						<h1 style="padding-top:8%; padding-left:4%;">Motor Inverter PCB Layout</h1>
+						<section>
+							<a class="image"><img src="images/PowerBoard.gif" alt="" style="object-fit: fill;" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<!--<h2>High School Senior Design Project</h2> -->
+									<p> 4-Layer PCB with components assembled on both top and bottom side. Design is optimzed
+                                        for minial via usage and large power planes for thermal dissipation. </p>
+									<!--<ul class="actions">
+										<li><a href="Onyx.html" class="button">Learn more</a></li>
+									</ul> -->
+								</div>
+							</div>
+						</section>
+					</section>		
+					
+					
+				<!-- STSchematic -->
+					<section id="STSchematic" class="wrapper style2 spotlights">
+						<h1 style="padding-top:8%; padding-left:4%;">STM32 Control Board Schematic</h1>
+						<section>
+							<a class="image"><img src="images/STSchematic.gif" alt="" style="object-fit: fill;" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<!--<h2>Shockwave Motor Prototype Controller</h2>-->
+									<p> The control board includes the STM32G491 with FOC control to support both sensored and sensorless motors. It features USB, CAN, I2C,
+                                         SPI, and UART interfaces.</p>
+									<!--<ul class="actions">
+										<li><a href="https://docs.google.com/document/d/1b8JR5uWFIEjenfiocnhV5Y2pE9JiTMAXXymfJotJang/edit" class="button">Learn more</a></li>
+									</ul> -->
+								</div>
+							</div>
+						</section>
+					</section>	
+
+				<!-- STBoard -->
+					<section id="STBoard" class="wrapper style2 spotlights">
+						<h1 style="padding-top:8%; padding-left:4%;">STM32 Control Board PCB Layout</h1>
+						<section>
+							<a class="image"><img src="images/STLayout.gif" alt="" style="object-fit: fill;" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<!--<h2>Shockwave Motor Prototype Controller</h2>  -->
+									<p> 2-layer PCB with pin header interface to the inverter board. OLED display is integrated to show status and debug information. </p>
+                                    <br>
+								</div>
+							</div>
+						</section>
+					</section>        
+				
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Bryce's Senior Project. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+
