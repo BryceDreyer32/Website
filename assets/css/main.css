@@ -3134,6 +3134,71 @@ input, select, textarea {
 
 		}
 
+/* Project grid */
+
+	#shockwave > .inner {
+		width: 100%;
+	}
+
+	.project-grid {
+		display: grid;
+		grid-template-columns: repeat(5, minmax(0, 1fr));
+		gap: 1.5em;
+	}
+
+	.project-tile {
+		background: rgba(255, 255, 255, 0.05);
+		border: solid 1px rgba(255, 255, 255, 0.15);
+		display: flex;
+		flex-direction: column;
+		min-width: 0;
+	}
+
+	.project-image {
+		border: 0;
+		display: block;
+		height: 13em;
+		overflow: hidden;
+	}
+
+		.project-image img {
+		display: block;
+		height: 100%;
+		object-fit: fill;
+		width: 100%;
+	}
+
+	.project-copy {
+		border-top: solid 1px rgba(255, 255, 255, 0.15);
+		flex: 1;
+		padding: 1.5em;
+	}
+
+		.project-copy h2 {
+			font-size: 1.15em;
+		}
+
+		.project-copy p {
+			font-size: 0.85em;
+			margin-bottom: 0;
+		}
+
+	@media screen and (max-width: 980px) {
+
+		.project-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {
+
+		.project-grid {
+			grid-template-columns: 1fr;
+		}
+
+	}
+
 /* Table */
 
 	.table-wrapper {
